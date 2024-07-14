@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.loading-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.loading-bar {
+    width: 80%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+}
+
+.loading-progress {
+    width: 0%; /* This will be dynamically changed by JavaScript */
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.7);
+    transition: width 0.5s;
+}
+
+.loading-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.loading-details, .loading-hints {
+    margin-top: 10px;
+    font-size: 18px;
+}
